@@ -6,13 +6,13 @@ import Root1 from "./components/pages/Root";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    // path: "/",
     element: (
       <Layout>
         <Root1></Root1>
       </Layout>
     ),
-    errorElement: <>PAGE NOT FOUND!</>,
+    // errorElement: <>PAGE NOT FOUND!</>,
     children: [
       {
         path: "/",

@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-const Root1 = () => {
+const Root = () => {
   return (
     <div>
       <Outlet></Outlet>
@@ -8,4 +8,4 @@ const Root1 = () => {
   );
 };
 
-export default Root1;
+export default Root;
