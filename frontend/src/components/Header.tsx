@@ -13,14 +13,14 @@ const Header = () => {
         >
           MernEats.com
         </Link>
-
-        {/* <Link
+        {/* 
+        <Link
           to="/user-profile"
-          className="text-3xl font-bold tracking-tight text-orange-500 "
+          className="font-bold tracking-tight text-orange-500 "
         >
-          Log In
+          User Profile
         </Link> */}
-        <div className="md:hidden">
+        <div className=" md:hidden">
           <MobileNav />
         </div>
         <div className="hidden md:block">

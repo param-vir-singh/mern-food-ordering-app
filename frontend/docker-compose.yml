@@ -1,0 +1,15 @@
+version: '3.0'
+
+services:
+  # app:
+  #   container_name: app-dev
+  #   image: app-dev
+  app-dev:
+    build: 
+      context: .
+      dockerfile: DockerFile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
