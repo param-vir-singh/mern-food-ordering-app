@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import {
@@ -25,6 +26,18 @@ const MobileNav = () => {
         <SheetDescription className="flex">
           <Button className="flex-1 font-bold bg-orange-500 mb-10">
             Log In
+          </Button>
+        </SheetDescription>
+
+        <SheetDescription className="flex">
+          <Button className="flex-1 font-bold bg-orange-500 mb-10">
+            <Link to="/">Home Page</Link>
+          </Button>
+        </SheetDescription>
+
+        <SheetDescription className="flex">
+          <Button className="flex-1 font-bold bg-orange-500 mb-10">
+            <Link to="user-profile">User Profile Page</Link>
           </Button>
         </SheetDescription>
 

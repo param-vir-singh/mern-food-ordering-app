@@ -1,4 +1,6 @@
 import { Outlet } from "react-router-dom";
+import landingImage from "../assets/landing.png";
+import downloadApps from "../assets/appDownload.png";
 
 const HomePage = () => {
   return (
@@ -8,6 +10,17 @@ const HomePage = () => {
           Tuck into a takeaway today
         </h1>
         <span className="text-xl">Food is just a finger touch away</span>
+      </div>
+
+      <div className="grid md:grid-cols-2 grid gap-5">
+        <img src={landingImage} />
+
+        <div className="flex flex-col items-center justify-center gap-4 text-center">
+          <span className="font-bold text-3xl tracking-tighter">
+            Order Takeaway faster!
+          </span>
+          <img src={downloadApps} />
+        </div>
       </div>
 
       <Outlet></Outlet>
