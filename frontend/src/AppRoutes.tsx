@@ -3,14 +3,17 @@ import HomePage from "./pages/HomePage";
 import UserProfilePage from "./components/component_pages/UserProfilePage";
 import Layout from "./layouts/layout";
 import Root1 from "./components/component_pages/Root";
+import Auth0ProviderwithNavigate from "./auth/Auth0ProviderwithNavigate";
 
 const router = createBrowserRouter([
   {
     // path: "/",
     element: (
-      <Layout>
-        <Root1></Root1>
-      </Layout>
+      <Auth0ProviderwithNavigate>
+        <Layout>
+          <Root1></Root1>
+        </Layout>
+      </Auth0ProviderwithNavigate>
     ),
     // errorElement: <>PAGE NOT FOUND!</>,
     children: [

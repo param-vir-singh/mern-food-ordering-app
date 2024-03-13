@@ -11,8 +11,11 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 import { Menu } from "lucide-react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const MobileNav = () => {
+  const { loginWithRedirect } = useAuth0();
+
   return (
     <Sheet>
       <SheetTrigger>
@@ -24,7 +27,10 @@ const MobileNav = () => {
         </SheetTitle>
         <Separator />
         <SheetDescription className="flex">
-          <Button className="flex-1 font-bold bg-orange-500 mb-10">
+          <Button
+            onClick={() => loginWithRedirect()}
+            className="flex-1 font-bold bg-orange-500 mb-10"
+          >
             Log In
           </Button>
         </SheetDescription>
